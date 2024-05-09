@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background-color: green;
+}
+
+.main {
+    min-height: 250vh;
+    width: 70%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.left-section {
+    grid-column: span 3;
+    height: 100%;
+    background-color: #a6f19d;
+    border: 1px solid black;
+}
+
+.right-section {
+    grid-column: span 4;
+    background-color: #eff2f1ee;
+    height: 100%;
+}
+
+
+.left-content {
+    padding: 2rem 3rem;
+}
+/*line*/
+
+.profile {
+   
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgb(9, 69, 9);
+}
+
+
+.image {
+    width: 100%;
+    text-align: center;
+}
+
+.profile img {
+    width: 300px;
+    border-radius: 50vh;
+    border: 2px solid #031501;
+
+}
+
+.name {
+    font-size: 2.3rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2rem 0;
+}
+
+.main-title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000000ec;
+    padding-top: 4rem;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.contact-info ul {
+    padding-top: 2rem;
+    margin-left: 20px;
+}
+
+.contact-info ul li {
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.contact-info ul li i {
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.contact-info ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+/*line*/
+.contact-info{
+    padding-bottom: 2rem;
+    border-bottom: 3px solid rgb(9, 69, 9);
+
+}
+.languages-section ul{
+    padding-top: 2rem;
+}
+.languages-section ul li{
+    padding: .4rem 0;
+    color: #000000;
+}
+.language-title {
+    color: #000000;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+/*line*/
+.languages-section{
+    padding-bottom: 2rem;
+    border-bottom: 3px solid rgb(9, 69, 9);
+
+}
+
+.skills-section ul {
+    padding-top: 2rem;
+}
+
+.skills-section ul li {
+    padding: .4rem 0;
+    color: #000000;
+}
+
+.skill-title {
+    color: #000000;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+/*line*/
+.skills-section{
+    padding-bottom: 2rem;
+    border-bottom: 3px solid rgb(9, 69, 9);
+}
+
+.educ-sec ul {
+    padding-top: 2rem;
+}
+
+.educ-sec ul li {
+    padding: .4rem 0;
+    color: #000000;
+}
+
+.educ-title {
+    color: #000000;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.sub-title {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #f7f7f7;
+}
+
+.right-main-content {
+    padding: 2rem 3rem;
+}
+
+
+.right-profile {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000000ec;
+    padding-top: 4rem;
+    margin-left: 3rem;
+    font-family: 'Anonymous Pro', monospace;
+    /* margin-top: 4rem;
+    position: relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size:4vh;
+    text-transform: uppercase;
+    margin-left: 3rem;
+    color: #000000;
+    margin-bottom: 2rem; */
+}
+
+.title{
+    padding-top: 2rem ;
+    color: #000000;
+    font-style: solid bold;
+    font-weight: 600;
+    margin-left:3rem ;
+    margin-right: 3rem;
+    font-size: large;
+}
+
+.text{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+
+
+/*Media Queries*/
+
+@media(max-width:900px) {
+    .right-profile::after {
+        width: 40%;
+    }
+}
+
+@media(max-width:700px) {
+    .right-profile::after {
+        width: 30%;
+    }
+}
+
+@media(max-width:800px) {
+    .left-section {
+        grid-column: span 3;
+    }
+
+    .right-section {
+        grid-column: span 4;
+    }
+
+   
+}
+
+@media (max-width:1300px) {
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .profile img {
+        width: 40%;
+    }
+}
+
+@media(max-width:750px) {
+    .profile img {
+        width: 60%;
+    }
+}
+
+@media (max-width:490px) {
+    .name {
+        font-size: 1.5rem;
+    }
+}
